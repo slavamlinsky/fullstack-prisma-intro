@@ -1,14 +1,13 @@
 // import prisma from "@/lib/prisma";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import { PrismaClient } from "@prisma/client";
 import { revalidatePath } from "next/cache";
 const prisma = new PrismaClient();
 
-export async function POST(request: { json: () => any }) {
+export async function POST(request: NextRequest) {
   const res = await request.json();
   const { title, content } = res;
-
   const result = await prisma.post.create({
     data: {
       title,
@@ -21,6 +20,8 @@ export async function POST(request: { json: () => any }) {
       },
     },
   });
+
+  revalidatePath("/");
 
   return NextResponse.json({ result });
 }
