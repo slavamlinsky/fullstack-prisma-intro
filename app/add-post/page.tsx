@@ -35,6 +35,7 @@ export default function AddPost() {
 
       //   router.push("/");
       router.refresh();
+      router.push("/");
     } catch (error) {
       console.error(error);
     }
