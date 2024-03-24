@@ -31,9 +31,9 @@ export default function AddPost() {
         body: JSON.stringify({ title, content }),
       });
 
-      console.log(result.ok);
+      //   console.log(result.ok);
 
-      router.push("/");
+      //   router.push("/");
       router.refresh();
     } catch (error) {
       console.error(error);
