@@ -1,0 +1,26 @@
+.post{
+    padding: 1em;
+    background-color: #EEE;
+    border: 1px solid #333;
+    /* box-shadow: 1px 1px 2px 3px #333; */
+    border-radius: .75rem;
+    margin: .25rem 0;
+    min-width: 25rem;
+    position: relative;
+}
+
+.deleteButton{
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* {{ border: '1px solid white', padding: '15px', margin: '10px 0px' }} */

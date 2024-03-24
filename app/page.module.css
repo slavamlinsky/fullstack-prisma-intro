@@ -7,6 +7,62 @@
   min-height: 100vh;
 }
 
+.feed{
+  gap: 2rem;
+  display: flex;  
+  flex-direction: column;
+}
+
+.feed h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.addPost{
+  background-color: green;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.viewFeed{
+  background-color: rgb(22, 73, 107);
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+}
+.addForm{
+  display: flex;
+  flex-direction: column;
+}
+.inputRow{
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  margin-bottom: .5rem;
+}
+.inputRow input, .inputRow textarea{
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  border: 1px solid #333;
+  outline: none;
+}
+.addButton{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
