@@ -21,7 +21,5 @@ export async function POST(request: NextRequest) {
     },
   });
 
-  revalidatePath("/");
-
   return NextResponse.json({ result });
 }

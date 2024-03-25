@@ -5,6 +5,8 @@ import { PrismaClient } from "@prisma/client";
 import Link from "next/link";
 const prisma = new PrismaClient();
 
+export const revalidate = 0;
+
 async function getPosts() {
   const posts = await prisma.post.findMany({
     where: { published: true },
